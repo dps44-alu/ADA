@@ -1,0 +1,14 @@
+#QUICKSORT VERSUS HEAPSORT.
+#Average processing Msteps (millions of program steps)
+#Number of samples (arrays  of integer): 30
+
+#                RANDOM ARRAYS         SORTED ARRAYS      REVERSE SORTED ARRAYS
+#             -------------------   -------------------   ---------------------
+#    Size     QuickSort  HeapSort   QuickSort  HeapSort   QuickSort    HeapSort
+#==============================================================================
+    32768       0.560     0.528       0.459     0.549       0.442       0.505
+    65536       1.204     1.121       0.983     1.166       0.950       1.072
+   131072       2.538     2.373       2.097     2.469       2.032       2.276
+   262144       5.417     5.009       4.456     5.189       4.325       4.811
+   524288      11.461    10.542       9.437    10.883       9.175      10.168
+  1048576      24.044    22.133      19.923    22.901      19.399      21.389

@@ -1,0 +1,23 @@
+#David Pérez Sampedro - 48774775D
+# pow2.png
+set terminal pngcairo enhanced font 'arial,10' size 800, 600
+set output "pow2.png"
+
+# Establecer la leyenda
+set key top left
+
+set title "pow2 function's comparation"
+
+set xlabel "exponent (n)"
+set ylabel "Thousands of program steps"
+
+set yrange[0:0.5]
+
+set style line 1 lc rgb '#ce33ff' lt 1 lw 1 pt 7 ps 0.2
+set style line 2 lc rgb '#009900' lt 1 lw 1 pt 7 ps 0.2
+set style line 3 lc rgb '#0066cc' lt 1 lw 1 pt 7 ps 0.2
+
+plot "pow2.Tsteps" using 1:2 with lines ls 1 title "pow2_1", \
+     "pow2.Tsteps" using 1:3 with lines ls 2 title "pow2_2", \
+     "pow2.Tsteps" using 1:4 with lines ls 3 title "pow2_3"
+
